@@ -1,0 +1,19 @@
+DELETE /products
+
+POST /products/_doc/3
+{
+  "id" : 3,
+  "name" : "Muz",
+  "price" : 81.5,
+  "stock" : 5,
+  "description": "Muz"
+}
+
+DELETE /products/_doc/3
+
+GET /products/_doc/3
+
+GET /products/_search
+{
+  "size" : 100,
+}
